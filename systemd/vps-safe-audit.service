@@ -1,0 +1,11 @@
+[Unit]
+Description=VPS Safe read-only anti-abuse audit
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+UMask=0077
+Nice=10
+IOSchedulingClass=idle
+ExecStart=/usr/bin/python3 /opt/vps-safe/vps_safe.py audit --config /etc/vps-safe/audit.json --output /var/log/vps-safe/audit --state-dir /var/lib/vps-safe-audit

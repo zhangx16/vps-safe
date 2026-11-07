@@ -1,0 +1,11 @@
+[Unit]
+Description=VPS Safe anti-abuse audit every minute
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=60s
+AccuracySec=5s
+Unit=vps-safe-audit.service
+
+[Install]
+WantedBy=timers.target

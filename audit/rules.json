@@ -1,0 +1,16 @@
+[
+ {"id":"packet-tools","title":"疑似发包工具","severity":"high","pattern":"\\b(hping[3]?|nping|mz|mausezahn|mzbench|pktgen|packit|nemesis|tcpreplay|scapy|flood|synflood|udpflood|icmpflood|httpflood|slowloris|goldeneye|hulk|xerxes)\\b"},
+ {"id":"scanner","title":"疑似扫描工具","severity":"high","pattern":"\\b(masscan|zmap|zdns|zgrab2?|naabu|rustscan|httpx|nuclei|fscan|kscan|gogo|goscan|scanrs|nmap)\\b"},
+ {"id":"ddos","title":"疑似 Flood/DDoS 工具","severity":"high","pattern":"\\b(syn[-_]?flood|udp[-_]?flood|http[-_]?flood|slowloris|goldeneye|hulk|xerxes|torshammer|ufonet|mhddos|ddosim|layer[47]|flooder|cc[-_]?attack|stress|hammer|python.*(ddos|flood|attack|hammer)|node.*(ddos|flood|attack))\\b"},
+ {"id":"proxy-panel","title":"代理面板","severity":"medium","pattern":"\\b(3x-ui|x-ui|v2-ui|s-ui|h-ui|marzban|v2board|sspanel(-hy2-adapter|-native)?|xboard|xrayr|v2b-node|trojan-panel|hiddify|nebula|sub-web|subconverter|bt-panel|aapanel|aa-panel)\\b"},
+ {"id":"miner","title":"疑似挖矿程序","severity":"high","pattern":"\\b(xmrig|xmrig-proxy|xmr-stak|xmrigcc|cpuminer|minerd|ethminer|lolminer|nbminer|teamredminer|t-rex|gminer|bzminer|srbminer|wildrig|rigel|miniZ|moneroocean)\\b"},
+ {"id":"airport-node","title":"商业机场对接后端","severity":"high","pattern":"\\b(V2bX|heki|remnanode-lite|rw-core|XrayR|v2b-node|v2ray-poseidon|sspanel-native|sspanel-hy2-adapter)\\b"},
+ {"id":"weak-crypto","title":"弱加密代理参数","severity":"high","pattern":"\\b(rc4-md5|aes-128-cfb|aes-256-cfb|bf-cfb|chacha20(?!-poly1305)|salsa20)\\b"},
+ {"id":"anti-dd","title":"DD 重装脚本","severity":"high","pattern":"\\b(OsMutation|OsMutationKvm|reinstall\\.sh|InstallNET|NewReinstall|debi\\.sh|clean-vps|G-Reinstall)\\b"},
+ {"id":"mtproto","title":"Telegram MTProto 代理","severity":"high","pattern":"\\b(mtg|mtproto-proxy|teleproxy|mtp-proxy|mtproxy)\\b"},
+ {"id":"benchmark","title":"性能跑分或压测","severity":"medium","pattern":"\\b(yabs\\.sh|geekbench|superbench|lemonbench|unixbench|sysbench|coremark|bench\\.monster)\\b"},
+ {"id":"bot-crawler","title":"无头浏览器或自动化","severity":"medium","pattern":"\\b(chromedriver|geckodriver|selenium|playwright|puppeteer)\\b"},
+ {"id":"credential-attack","title":"疑似爆破或撞库工具","severity":"medium","pattern":"\\b(hydra|thc-hydra|medusa|ncrack|patator|crowbar|brutespray|ffuf|gobuster|dirsearch|dirb|sshpass|brute)\\b"},
+ {"id":"traditional-vpn","title":"传统 VPN 服务","severity":"high","pattern":"\\b(openvpn|openvpn-as|ovpn-server|ovpn-client|openvpn-install|ocserv|pptpd|xl2tpd|softether-vpnserver|vpnserver)\\b"},
+ {"id":"open-proxy","title":"需核实认证的 SOCKS/开放代理程序","severity":"high","pattern":"\\b(free-proxy(-pool|-list)?|freeproxy|proxy[-_]pool|proxypool|IPProxyPool|proxybroker|proxy[-_]scraper|proxy[-_]checker|tinyproxy|3proxy|danted|microsocks)\\b"}
+]

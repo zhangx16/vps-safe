@@ -1,0 +1,15 @@
+[Unit]
+Description=Restore confirmed VPS Safe firewall rules
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/var/lib/vps-safe/confirmed.json
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=root
+UMask=0077
+ExecStart=/usr/bin/python3 /opt/vps-safe/vps_safe.py restore
+
+[Install]
+WantedBy=multi-user.target

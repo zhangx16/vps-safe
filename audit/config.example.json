@@ -1,0 +1,20 @@
+{
+  "exclude_client_ports": [
+    22,
+    8792
+  ],
+  "min_client_ips": 5,
+  "min_geo_regions": 3,
+  "min_consecutive_samples": 3,
+  "min_geo_duration_seconds": 120,
+  "geo_level": "country",
+  "max_geo_lookups": 100,
+  "max_startup_files": 3000,
+  "max_file_bytes": 262144,
+  "allowlist": [],
+  "country_policy": {
+    "mode": "off",
+    "countries": [],
+    "containers": []
+  }
+}

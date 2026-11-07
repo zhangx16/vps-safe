@@ -1,0 +1,18 @@
+{
+  "wan_interfaces": ["eth0"],
+  "management_tcp_ports": [22],
+  "allow_tcp_ports": [80, 443],
+  "allow_udp_ports": [],
+  "host_default_drop": false,
+  "blocked_source_cidrs": [],
+  "blocked_tcp_ports": [],
+  "blocked_udp_ports": [],
+  "block_smtp": true,
+  "smtp_ports": [25, 465, 587, 2525],
+  "smtp_exempt_cidrs": [],
+  "quarantine_ips": [],
+  "source_policy": {"mode": "off", "cidrs": [], "families": [4, 6]},
+  "drop_invalid": true,
+  "syn_rate_per_second": 0,
+  "syn_burst": 50
+}
